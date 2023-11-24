@@ -17,9 +17,11 @@ const links = [
     href: '/dashboard/invoices',
     icon: DocumentDuplicateIcon,
   },
-  { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },{
+    name: 'Device', href: '/dashboard/device',icon: UserGroupIcon}
 ];
-/* use a href
+//use a href
+/*
 export default function NavLinks() {
   return (
     <>
@@ -62,6 +64,7 @@ export default function NavLinks() {
   );
 }
 */
+
 export default function NavLinks() {
   const pathname = usePathname();
   return (
